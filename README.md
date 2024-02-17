@@ -2,7 +2,7 @@
 ___
 
 ## Project description
-___
+
 My portfolio website is designed to do two things. 
 * Create a convenient website presenting my skills
 * Training in creating pages using technologies and techniques that are new to me
