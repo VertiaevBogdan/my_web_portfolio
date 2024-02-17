@@ -1,0 +1,62 @@
+%button__template {
+  white-space: nowrap;
+  position: relative;
+  display: inline-block;
+  background-color: $background-color;
+  border: .2em solid $accent;
+  border-radius: 3%;
+  font-size: 1em;
+
+  padding: 1em;
+
+  transition: background-color 0.2s, color 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $accent;
+    color: $background-color;
+
+  }
+}
+
+%display__flex {
+  display: flex;
+  align-items: center;
+}
+
+.margin-top{
+  margin-top: 4em;
+}
+
+%container__padding {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+%h2__template {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+%h3__template {
+  font-size: 1.5em;
+}
+
+%p__accent {
+  color: $accent;
+  font-size: 1.2em;
+}
+
+@media (max-width:1023px) {
+  %button__template {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 400px) {
+  %h2__template {
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+}
+

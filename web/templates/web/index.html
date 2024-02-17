@@ -1,0 +1,138 @@
+{%  load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vertiaev Bogdan</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+{#    <link href="../../static/web/css/scss/main.css" rel="stylesheet" type="text/css" id="theme">#}
+    <link rel="stylesheet" href="{% static "web/css/scss/main.css" %}">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <a href="" class="my_logo">Vertiaev Bogdan</a>
+
+            <ul class="nav__list">
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#resume" class="nav__link">Resume</a></li>
+                <li><a href="#areas" class="nav__link">Areas of Interest</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+
+            <a href="{% url 'download_resume' %}" class="resume_btn">Download Resume</a>
+        </nav>
+
+        <section id="about" class="about__container margin-top">
+            <article class="about__info">
+                <h1>Hello! I am Bogdan</h1>
+                <p class="about__info--text">
+                    I am a junior developer,
+                    I have experience in various
+                    fields and will fit perfectly into your team!
+                </p>
+                <button id="contactButton" class="contact__button">Contact Me</button>
+            </article>
+            <img src="../../static/web/img/about_photo_3.jpg" alt="" class="about__img">
+        </section>
+
+        <section id="resume" class="resume__container margin-top">
+            <div class="resume__grid">
+                <div class="resume__div1">
+                    <h2>Education</h2>
+                </div>
+                <div class="resume__div2">
+                    <h3>Palacký University Olomouc</h3>
+                    <p> Information Technologies
+                        <br>2022-2025<br>
+                    </p>
+                </div>
+                <div class="resume__div3">
+                    <img src="../../static/web/img/Up_white.png" alt="" class="resume__img">
+                </div>
+                <div class="resume__div4">
+                    <h2>Experience</h2>
+                </div>
+                <div class="resume__div5">
+                    <h3>Website Development</h3>
+                    <p> Understanding of development principles
+                        <br>Technologies: HTML, SCSS, JS<br>
+                    </p>
+                </div>
+                <div class="resume__div6">
+                    <h3>Relational DB analysis and design</h3>
+                    <p> Conceptual modeling, transformation into a relational model
+                        <br>Construction of more complex queries<br>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="areas" class="areas__container margin-top">
+            <div class="arias__title">
+                <h2>Areas of Interest</h2>
+            </div>
+            <div class="areas__block margin-top">
+                <img src="../../static/web/img/server.jpg" alt="" class="areas__img">
+                <article class="areas__article">
+                    <h3>Databases and Computer Networks</h3>
+                    <p>In my practice, I had to interact with relational and non-relational databases.
+                        I also had to work with nginx and configure Linux servers.
+                        Often I had to interact with the MikroTik virtual equipment and configure it.
+                    </p>
+                </article>
+            </div>
+            <div class="areas__block areas__block--reverse margin-top">
+                <img src="../../static/web/img/programming.png" alt="" class="areas__img">
+                <article class="areas__article">
+                    <h3>Programming Skills</h3>
+                    <p>In programming, I have been lucky enough to try out many languages
+                        and libraries, but at the moment Python is my main choice.
+                        I have experience in solving algorithmic problems,
+                        working with PyTest and Django, and writing parsers.
+                    </p>
+                </article>
+            </div>
+
+            <div class="areas__products margin-top">
+                <h2>Products and Technologies I Use</h2>
+                <div class="icons__bar margin-top">
+                    <div class="areas__div areas--div1">
+                        <img src="../../static/web/img/microtic.webp" alt="">
+                        <p>MikroTik</p>
+                    </div>
+                    <div class="areas__div areas--div2">
+                        <img src="../../static/web/img/mongodb.svg" alt="">
+                        <p>MongoDB</p>
+                    </div>
+                    <div class="areas__div areas--div3">
+                        <img src="../../static/web/img/Postgresql_elephant.svg.png" alt="">
+                        <p>PostgreSQL</p>
+                    </div>
+                    <div class="areas__div areas--div4">
+                        <img src="../../static/web/img/os_django.png" alt="">
+                        <p>Django</p>
+                    </div>
+                    <div class="areas__div areas--div5">
+                        <img src="../../static/web/img/python.png" alt="">
+                        <p>Python</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact__container">
+            <div class="contact__wrap">
+                <h3>Contact Me</h3>
+                <address>
+                    <a class="email" id="contact" href="#">vertiaevbogdan@seznam.cz</a>
+                </address>
+                <p class="out"></p>
+            </div>
+        </section>
+    </div>
+{#    <script src="./JS/script.js"></script>#}
+    <script src="{% static "web/js/script.js" %}"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+.contact__container {
+  margin-top: 8em;
+  margin-bottom: 3em;
+
+  .contact__wrap {
+    text-align: center;
+
+    h3 {
+      @extend %p__accent;
+      font-size: 1.5em;
+    }
+
+    address {
+      @extend %h2__template;
+    }
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.copied-message {
+  animation: fadeOut 2s ease forwards;
+}
+
+@media (max-width:1023px) {
+  .contact__container {
+    margin-top: 3em;
+  }
+}
+
+@media (max-width: 766px) {
+  .email {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 553px) {
+  .email {
+    font-size: 0.6em;
+  }
+}

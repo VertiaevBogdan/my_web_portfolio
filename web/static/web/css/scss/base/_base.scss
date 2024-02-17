@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+body {
+  //background-color: #2C2E43;
+  background-color: $background-color;
+  height: 100%;
+  line-height: 1.5;
+  font-size: 1.1em;
+  color: $white;
+  font-family: "Nunito";
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+a {
+  color: $button-color;
+  transition: color .3s ease-in;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 2vw;
+  max-width: 1440px;
+}
+
+button {
+  color: $accent;
+}
+
+address {
+  font-style: normal;
+}
+
